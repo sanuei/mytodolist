@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1a1a1a; /* Dark background from image */
+  color: #e8d8c9; /* Beige/Cream text color */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Define color variables based on the image */
+:root {
+  --color-primary: #e8d8c9; /* Beige/Cream */
+  --color-secondary: #4b607f; /* Dark Blue Grey */
+  --color-accent: #f3701e; /* Orange */
+  --color-background: #1a1a1a; /* Dark Background */
+  --color-text: #e8d8c9; /* Beige/Cream Text */
+  --color-text-dark: #1a1a1a;
+}
