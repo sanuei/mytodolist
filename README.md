@@ -1,4 +1,4 @@
-Canvas # Todo List 使用说明文档
+# Todo List 使用说明文档
 
 一个使用 React、Spring Boot 和 PostgreSQL 构建的现代化待办事项应用。采用美式复古风格界面，支持中文界面。
 
