@@ -1,162 +1,163 @@
-# Todo List ?ÍÑ
+Canvas # Todo List ä½¿ç”¨è¯´æ˜Žæ–‡æ¡£
 
-°ìÐ¤»ÈÍÑ React¡¢Spring Boot ÏÂ PostgreSQL Ã¨·úÅª?Âå²½ÂÔ?»ö??ÍÑ¡£ºÓÍÑÈþ¼°?¸Å?³Ê??¡¤»Ù»ýÃæÊ¸³¦ÌÌ¡£
+ä¸€ä¸ªä½¿ç”¨ Reactã€Spring Boot å’Œ PostgreSQL æž„å»ºçš„çŽ°ä»£åŒ–å¾…åŠžäº‹é¡¹åº”ç”¨ã€‚é‡‡ç”¨ç¾Žå¼å¤å¤é£Žæ ¼ç•Œé¢ï¼Œæ”¯æŒä¸­æ–‡ç•Œé¢ã€‚
 
-## µ»??
+## æŠ€æœ¯æ ˆ
 
-### Á°Ã¼
+### å‰ç«¯
 - React 18
 - Styled Components
 - Axios
-- Noto Sans SC »úÂÎ
+- Noto Sans SC å­—ä½“
 
-### ¹¡Ã¼
+### åŽç«¯
 - Spring Boot 3.2.5
 - Spring Data JPA
 - PostgreSQL
 - Lombok
 - Jakarta Validation
 
-## ¸ùÇ½ÆÃÀ­
+## åŠŸèƒ½ç‰¹æ€§
 
-- ? Èþ¼°?¸Å?³Ê³¦ÌÌ
-- ? ?·ú¡¢?¼è¡¢¹¹¿·ÏÂ?½üÂÔ?»ö?
-- ? ??ÂÔ?»ö??Öá´°À®/Ì¤´°À®
-- ? µ»?¼°??
-- ? ¼«Äê?ÇÛ¿§Êý°Æ
-  - ¼ç¿§?¡§#e8d8c9¡ÊÊÆ¿§¡Ë
-  - ¼¡Í×¿§¡§#4b607f¡Ê¿¼?³¥¡Ë
-  - ??¿§¡§#f3701e¡ÊÜô¿§¡Ë
+- âœ… ç¾Žå¼å¤å¤é£Žæ ¼ç•Œé¢
+- âœ… åˆ›å»ºã€èŽ·å–ã€æ›´æ–°å’Œåˆ é™¤å¾…åŠžäº‹é¡¹
+- âœ… æ ‡è®°å¾…åŠžäº‹é¡¹ä¸ºå·²å®Œæˆ/æœªå®Œæˆ
+- âœ… å“åº”å¼è®¾è®¡
+- âœ… è‡ªå®šä¹‰é…è‰²æ–¹æ¡ˆï¼š
+  - ä¸»è‰²ï¼š#e8d8c9ï¼ˆç±³è‰²ï¼‰
+  - æ¬¡è¦è‰²ï¼š#4b607fï¼ˆæ·±è“ç°ï¼‰
+  - å¼ºè°ƒè‰²ï¼š#f3701eï¼ˆæ©™è‰²ï¼‰
 
-## °ÂÁõ?ÌÀ
+## å®‰è£…è¯´æ˜Ž
 
-### Á°ÃÖÍ×µá
+### å‰ç½®è¦æ±‚
 
 - Node.js 16+
 - Java Development Kit (JDK) 17+
 - PostgreSQL 12+
 - Maven 3.6+
 
-### ¿ô¿ø?ÇÛÃÖ
+### æ•°æ®åº“é…ç½®
 
-1. ?·ú PostgreSQL ¿ô¿ø?¡§
+1. åˆ›å»º PostgreSQL æ•°æ®åº“ï¼š
 ```sql
 CREATE DATABASE todo_db;
 ```
 
-2. ½¤²þ¹¡Ã¼ÇÛÃÖÊ¸·ï `backend/src/main/resources/application.properties`¡§
+2. ä¿®æ”¹åŽç«¯é…ç½®æ–‡ä»¶ `backend/src/main/resources/application.properties`ï¼š
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/todo_db
-spring.datasource.username=°ßÅª¿ô¿ø?ÍÑ?Ì¾
-spring.datasource.password=°ßÅª¿ô¿ø?Ì©?
+spring.datasource.username=ä½ çš„æ•°æ®åº“ç”¨æˆ·å
+spring.datasource.password=ä½ çš„æ•°æ®åº“å¯†ç 
 ```
 
-### ¹¡Ã¼°ÂÁõ
+### åŽç«¯å®‰è£…
 
-1. ?Æþ¹¡Ã¼ÌÜ?¡§
+1. è¿›å…¥åŽç«¯ç›®å½•ï¼š
 ```bash
 cd backend
 ```
 
-2. »ÈÍÑ Maven °ÂÁõ°Í?¡§
+2. ä½¿ç”¨ Maven å®‰è£…ä¾èµ–ï¼š
 ```bash
 mvn clean install
 ```
 
-3. ´ë?¹¡Ã¼Éþ?¡§
+3. å¯åŠ¨åŽç«¯æœåŠ¡ï¼š
 ```bash
 mvn spring-boot:run
 ```
 
-¹¡Ã¼Éþ?¾­ºß http://localhost:8080 á½¹Ô
+åŽç«¯æœåŠ¡å°†åœ¨ http://localhost:8080 è¿è¡Œ
 
-### Á°Ã¼°ÂÁõ
+### å‰ç«¯å®‰è£…
 
-1. ?ÆþÁ°Ã¼ÌÜ?¡§
+1. è¿›å…¥å‰ç«¯ç›®å½•ï¼š
 ```bash
 cd frontend
 ```
 
-2. °ÂÁõ°Í?¡§
+2. å®‰è£…ä¾èµ–ï¼š
 ```bash
 npm install
 ```
 
-3. ´ë???Éþ?´ï¡§
+3. å¯åŠ¨å¼€å‘æœåŠ¡å™¨ï¼š
 ```bash
 npm start
 ```
 
-Á°Ã¼?ÍÑ¾­ºß http://localhost:3000 á½¹Ô
+å‰ç«¯åº”ç”¨å°†åœ¨ http://localhost:3000 è¿è¡Œ
 
-## »ÈÍÑ?ÌÀ
+## ä½¿ç”¨è¯´æ˜Ž
 
-1. Åº²ÃÂÔ?»ö?¡§
-   - ºß?ÆþÛÚÃæ?ÆþÇ¤???ÏÂÉÁ½Ò¡Ê²Ä?¡Ë
-   - ÅÀ?"Åº²Ã"°Ä?
+1. æ·»åŠ å¾…åŠžäº‹é¡¹ï¼š
+   - åœ¨è¾“å…¥æ¡†ä¸­è¾“å…¥ä»»åŠ¡åç§°å’Œæè¿°ï¼ˆå¯é€‰ï¼‰
+   - ç‚¹å‡»â€œæ·»åŠ â€æŒ‰é’®
 
-2. ´°À®ÂÔ?»ö?¡§
-   - ÅÀ?ÂÔ?»ö?Á°Åª??ÛÚ
+2. å®Œæˆå¾…åŠžäº‹é¡¹ï¼š
+   - ç‚¹å‡»å¾…åŠžäº‹é¡¹å‰çš„å¤é€‰æ¡†
 
-3. ?½üÂÔ?»ö?¡§
-   - ÅÀ?ÂÔ?»ö?±¦?Åª"?½ü"°Ä?
+3. åˆ é™¤å¾…åŠžäº‹é¡¹ï¼š
+   - ç‚¹å‡»å¾…åŠžäº‹é¡¹å³ä¾§çš„â€œåˆ é™¤â€æŒ‰é’®
 
-## ???ÌÀ
+## æŽ¥å£è¯´æ˜Ž
 
-### API Ã¼ÅÀ
+### API ç«¯ç‚¹
 
-- GET `/api/todos` - ?¼è½êÍ­ÂÔ?»ö?
-- POST `/api/todos` - ?·ú¿·ÂÔ?»ö?
-- PUT `/api/todos/{id}` - ¹¹¿·ÂÔ?»ö?
-- DELETE `/api/todos/{id}` - ?½üÂÔ?»ö?
+- GET `/api/todos` - èŽ·å–æ‰€æœ‰å¾…åŠžäº‹é¡¹
+- POST `/api/todos` - åˆ›å»ºæ–°å¾…åŠžäº‹é¡¹
+- PUT `/api/todos/{id}` - æ›´æ–°å¾…åŠžäº‹é¡¹
+- DELETE `/api/todos/{id}` - åˆ é™¤å¾…åŠžäº‹é¡¹
 
-### ?ÌÜ?Ã¨
+### é¡¹ç›®ç»“æž„
 
 ```
 .
-¨§¨¡¨¡ backend/
-¨¢   ¨§¨¡¨¡ src/
-¨¢   ¨¢   ¨§¨¡¨¡ main/
-¨¢   ¨¢   ¨¢   ¨§¨¡¨¡ java/
-¨¢   ¨¢   ¨¢   ¨¢   ¨¦¨¡¨¡ com/todoapp/backend/
-¨¢   ¨¢   ¨¢   ¨¢       ¨§¨¡¨¡ config/
-¨¢   ¨¢   ¨¢   ¨¢       ¨§¨¡¨¡ controller/
-¨¢   ¨¢   ¨¢   ¨¢       ¨§¨¡¨¡ model/
-¨¢   ¨¢   ¨¢   ¨¢       ¨§¨¡¨¡ repository/
-¨¢   ¨¢   ¨¢   ¨¢       ¨¦¨¡¨¡ service/
-¨¢   ¨¢   ¨¢   ¨¦¨¡¨¡ resources/
-¨¢   ¨¢   ¨¦¨¡¨¡ test/
-¨¢   ¨¦¨¡¨¡ pom.xml
-¨§¨¡¨¡ frontend/
-¨¢   ¨§¨¡¨¡ public/
-¨¢   ¨§¨¡¨¡ src/
-¨¢   ¨¢   ¨§¨¡¨¡ components/
-¨¢   ¨¢   ¨§¨¡¨¡ App.js
-¨¢   ¨¢   ¨¦¨¡¨¡ index.js
-¨¢   ¨¦¨¡¨¡ package.json
-¨¦¨¡¨¡ README.md
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ main/
+â”‚   â”‚   â”‚   â”œâ”€â”€ java/
+â”‚   â”‚   â”‚   â”‚   â””â”€â”€ com/todoapp/backend/
+â”‚   â”‚   â”‚   â”‚       â”œâ”€â”€ config/
+â”‚   â”‚   â”‚   â”‚       â”œâ”€â”€ controller/
+â”‚   â”‚   â”‚   â”‚       â”œâ”€â”€ model/
+â”‚   â”‚   â”‚   â”‚       â”œâ”€â”€ repository/
+â”‚   â”‚   â”‚   â”‚       â””â”€â”€ service/
+â”‚   â”‚   â”‚   â””â”€â”€ resources/
+â”‚   â”‚   â””â”€â”€ test/
+â”‚   â””â”€â”€ pom.xml
+â”œâ”€â”€ frontend/
+â”‚   â”œâ”€â”€ public/
+â”‚   â”œâ”€â”€ src/
+â”‚   â”‚   â”œâ”€â”€ components/
+â”‚   â”‚   â”œâ”€â”€ App.js
+â”‚   â”‚   â””â”€â”€ index.js
+â”‚   â””â”€â”€ package.json
+â””â”€â”€ README.md
 ```
 
-## ¸Î¾ãÇÓ½ü
+## æ•…éšœæŽ’é™¤
 
-1. Ç¡²Ì¶øÅþ CORS ??¡§
-   - ÏìÊÝ¹¡Ã¼Éþ?Àµºßá½¹Ô
-   - ?? `WebConfig.java` ÃæÅª CORS ÇÛÃÖ
-   - ÏìÊÝÁ°Ã¼»ÈÍÑÀµÏìÅª API ÃÏÔ®
+1. å¦‚æžœé‡åˆ° CORS é—®é¢˜ï¼š
+   - ç¡®ä¿åŽç«¯æœåŠ¡æ­£åœ¨è¿è¡Œ
+   - æ£€æŸ¥ `WebConfig.java` ä¸­çš„ CORS é…ç½®
+   - ç¡®ä¿å‰ç«¯ä½¿ç”¨æ­£ç¡®çš„ API åœ°å€
 
-2. Ç¡²Ì¿ô¿ø??ÀÜ¼º?¡§
-   - ?? PostgreSQL Éþ?À§ÈÝá½¹Ô
-   - ??¿ô¿ø?Ñß¿øÀ§ÈÝÀµÏì
-   - ÏìÊÝ¿ô¿ø?Öá?·ú
+2. å¦‚æžœæ•°æ®åº“è¿žæŽ¥å¤±è´¥ï¼š
+   - æ£€æŸ¥ PostgreSQL æœåŠ¡æ˜¯å¦è¿è¡Œ
+   - æ£€æŸ¥æ•°æ®åº“å‡­æ®æ˜¯å¦æ­£ç¡®
+   - ç¡®ä¿æ•°æ®åº“å·²åˆ›å»º
 
-3. Ç¡²ÌÁ°Ã¼ÚÛË¡´ë?¡§
-   - À¶½ü `node_modules` Öõ½Å¿·°ÂÁõ°Í?
-   - ?? Node.js ÈÇËÜÀ§ÈÝ·óÍÆ
+3. å¦‚æžœå‰ç«¯æ— æ³•å¯åŠ¨ï¼š
+   - åˆ é™¤ `node_modules` å¹¶é‡æ–°å®‰è£…ä¾èµ–
+   - æ£€æŸ¥ Node.js ç‰ˆæœ¬æ˜¯å¦å…¼å®¹
 
-## ?¸¥
+## è´¡çŒ®
 
-?·ÞÄó¸ò Issue ÏÂ Pull Request¡ª
+æ¬¢è¿Žæäº¤ Issue å’Œ Pull Requestï¼
 
-## ?²Ä
+## è®¸å¯è¯
 
-MIT License 
+MIT License
+
